@@ -82,5 +82,4 @@
   (interactive)
   (find-alternate-file (format "/sudo::%s" (buffer-file-name))))
 
-
 (provide 'init-defaults)
