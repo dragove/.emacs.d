@@ -14,5 +14,7 @@
 (straight-use-package 'pyim)
 (straight-use-package 'posframe)
 (straight-use-package 'pyim-basedict)
+;; increment narrowing
+(straight-use-package 'selectrum)
 
 (provide 'init-packages)

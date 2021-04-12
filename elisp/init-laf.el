@@ -2,6 +2,10 @@
 
 ;; use zerodark as main theme
 (load-theme 'zerodark t)
+
+;; open selectrum
+(selectrum-mode +1)
+
 (zerodark-setup-modeline-format)
 
 ;;; No scroll bar
