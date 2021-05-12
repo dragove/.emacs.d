@@ -1,3 +1,5 @@
 (require 'init-modal)
 (require 'init-im)
 (require 'init-org)
+(require 'init-lsp)
+(require 'init-completion)

@@ -16,5 +16,14 @@
 (straight-use-package 'pyim-basedict)
 ;; increment narrowing
 (straight-use-package 'selectrum)
+;; lsp supports
+(straight-use-package 'flymake)
+(straight-use-package 'eglot)
+;; auto completions
+(straight-use-package 'prescient)
+(straight-use-package 'selectrum-prescient)
+(straight-use-package 'company)
+(straight-use-package 'rg)
+(straight-use-package 'yasnippet)
 
 (provide 'init-packages)

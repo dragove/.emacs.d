@@ -17,6 +17,9 @@
 ;;; No menu bar
 (menu-bar-mode -1)
 
+;;; show line numbers
+(global-display-line-numbers-mode)
+
 ;;; No window decoration
 ;; (add-to-list 'default-frame-alist (cons 'undecorated t))
 
@@ -32,7 +35,7 @@
   (let* ((font-spec (format "%s-%d" +font-family +font-size))
          (variable-pitch-font-spec (format "%s-%d" +variable-pitch-family +font-size))
          (fixed-pitch-font-spec (format "%s-%d" +fixed-pitch-family +font-size)))
-    (add-to-list 'default-frame-alist `(font . ,font-spec))
+ (add-to-list 'default-frame-alist `(font . ,font-spec))
     (set-face-attribute 'variable-pitch nil :font variable-pitch-font-spec)
     (set-face-attribute 'fixed-pitch nil :font fixed-pitch-font-spec)))
 
