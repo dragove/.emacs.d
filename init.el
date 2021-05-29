@@ -1,4 +1,5 @@
 (require 'init-modal)
+(require 'init-edit)
 (require 'init-im)
 (require 'init-org)
 (require 'init-lsp)

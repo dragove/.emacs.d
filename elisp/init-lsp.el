@@ -20,6 +20,5 @@
                '(c-mode "clangd"))
   (add-to-list 'eglot-server-programs
 			   '(c++-mode "clangd")))
-(add-hook 'prog-mode-hook 'eglot-ensure)
 
 (provide 'init-lsp)

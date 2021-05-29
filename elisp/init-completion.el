@@ -95,13 +95,6 @@
   (define-key selectrum-minibuffer-map (kbd "[") #'previous-history-element)
   (define-key selectrum-minibuffer-map (kbd "]") #'next-history-element))
 
-;;; deadgrep
-
-;; (autoload #'deadgrep "deadgrep" nil t)
-;;
-;; (with-eval-after-load "deadgrep"
-;;   (define-key deadgrep-mode-map (kbd "w") 'deadgrep-edit-mode)
-;;   (define-key deadgrep-edit-mode-map (kbd "C-x C-s") 'deadgrep-mode))
 
 (require 'rg)
 (rg-enable-default-bindings)
