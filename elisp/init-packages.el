@@ -14,6 +14,9 @@
 (straight-use-package 'pyim)
 (straight-use-package 'posframe)
 (straight-use-package 'pyim-basedict)
+;; better syntax highlighting with tree-sitter
+(straight-use-package 'tree-sitter)
+(straight-use-package 'tree-sitter-langs)
 ;; increment narrowing
 (straight-use-package 'selectrum)
 ;; lsp supports

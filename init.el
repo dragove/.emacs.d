@@ -1,4 +1,5 @@
 (require 'init-modal)
+(require 'init-tree-sitter)
 (require 'init-edit)
 (require 'init-im)
 (require 'init-org)
