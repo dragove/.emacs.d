@@ -106,8 +106,8 @@
   ;; meow-setup is your custom function, see below
   (meow-setup)
   ;; If you want relative line number in NORMAL state(for display-line-numbers-mode)
-  (meow-setup-line-number)
+  (meow-setup-line-number))
   ;; If you need setup indicator, see `meow-indicator' for customizing by hand.
-  (meow-setup-indicator))
+  
 
 (provide 'init-modal)

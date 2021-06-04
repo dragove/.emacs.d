@@ -1,12 +1,11 @@
 ;;; -*- lexical-binding: t -*-
 
-;; use zerodark as main theme
-(load-theme 'zerodark t)
+;; init theme
+(load-theme 'doom-one t)
+(doom-modeline-mode 1)
 
 ;; open selectrum
 (selectrum-mode +1)
-
-(zerodark-setup-modeline-format)
 
 ;;; No scroll bar
 (scroll-bar-mode -1)
@@ -19,9 +18,6 @@
 
 ;;; show line numbers
 (global-display-line-numbers-mode)
-
-;;; No window decoration
-;; (add-to-list 'default-frame-alist (cons 'undecorated t))
 
 ;;; Fonts
 (defvar +font-family "FuraCode Nerd Font")

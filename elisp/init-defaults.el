@@ -82,4 +82,12 @@
   (interactive)
   (find-alternate-file (format "/sudo::%s" (buffer-file-name))))
 
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; unbind some useless keybindings
+(global-unset-key (kbd "C-x C-p"))
+(global-unset-key (kbd "C-x C-n"))
+(global-unset-key (kbd "C-x C-b"))
+(global-set-key (kbd "C-x C-d") #'dired)
+
 (provide 'init-defaults)

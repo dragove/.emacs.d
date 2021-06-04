@@ -2,12 +2,13 @@
 
 ;; for better gc
 (straight-use-package 'gcmh)
+;; themes
+(straight-use-package 'doom-themes)
+(straight-use-package 'doom-modeline)
 ;; git support
 (straight-use-package 'magit)
 ;; spellchecking
 (straight-use-package 'flycheck)
-;; dark theme
-(straight-use-package 'zerodark-theme)
 ;; modal editing
 (straight-use-package 'meow)
 ;; pinyin input method
