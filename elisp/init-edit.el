@@ -1,5 +1,3 @@
-(straight-use-package 'smartparens)
-
-(autoload #'smartparens-mode "smartparens" nil t)
+(electric-pair-mode)
 
 (provide 'init-edit)

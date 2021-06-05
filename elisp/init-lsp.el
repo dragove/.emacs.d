@@ -17,6 +17,8 @@
 
 (with-eval-after-load "eglot"
   (add-to-list 'eglot-server-programs
+               '(python-mode "pylsp"))
+  (add-to-list 'eglot-server-programs
                '(c-mode "clangd"))
   (add-to-list 'eglot-server-programs
 			   '(c++-mode "clangd")))

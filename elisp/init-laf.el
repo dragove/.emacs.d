@@ -4,6 +4,9 @@
 (load-theme 'doom-one t)
 (doom-modeline-mode 1)
 
+;; transparency
+(add-to-list 'default-frame-alist '(alpha . (90 . 50)))
+
 ;; open selectrum
 (selectrum-mode +1)
 

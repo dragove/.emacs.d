@@ -7,10 +7,10 @@
 (straight-use-package 'doom-modeline)
 ;; git support
 (straight-use-package 'magit)
-;; spellchecking
-(straight-use-package 'flycheck)
 ;; modal editing
 (straight-use-package 'meow)
+;; increment narrowing
+(straight-use-package 'selectrum)
 ;; pinyin input method
 (straight-use-package 'pyim)
 (straight-use-package 'posframe)
@@ -18,8 +18,6 @@
 ;; better syntax highlighting with tree-sitter
 (straight-use-package 'tree-sitter)
 (straight-use-package 'tree-sitter-langs)
-;; increment narrowing
-(straight-use-package 'selectrum)
 ;; lsp supports
 (straight-use-package 'flymake)
 (straight-use-package 'eglot)
