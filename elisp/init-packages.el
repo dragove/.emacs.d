@@ -5,6 +5,8 @@
 ;; themes
 (straight-use-package 'doom-themes)
 (straight-use-package 'doom-modeline)
+;; environment
+(straight-use-package 'direnv)
 ;; git support
 (straight-use-package 'magit)
 ;; modal editing
