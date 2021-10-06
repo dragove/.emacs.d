@@ -1,8 +1,8 @@
 ;;; -*- lexical-binding: t -*-
 
 ;; init theme
+(add-hook 'after-init-hook #'doom-modeline-mode)
 (load-theme 'doom-one t)
-(doom-modeline-mode 1)
 
 ;; transparency
 (add-to-list 'default-frame-alist '(alpha . (90 . 50)))
