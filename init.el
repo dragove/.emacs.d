@@ -5,4 +5,3 @@
 (require 'init-org)
 (require 'init-lsp)
 (require 'init-completion)
-(require 'init-direnv)
