@@ -45,7 +45,7 @@
    '("B" . meow-back-symbol)
    '("c" . meow-change)
    '("C" . meow-change-save)
-   '("d" . meow-C-d)
+   '("d" . meow-delete)
    '("D" . meow-backward-delete)
    '("e" . meow-next-word)
    '("E" . meow-next-symbol)
@@ -64,7 +64,6 @@
    '("l" . meow-right)
    '("L" . meow-right-expand)
    '("m" . meow-join)
-   '("M" . meow-extend)
    '("n" . meow-search)
    '("N" . meow-pop-search)
    '("o" . meow-block)
@@ -108,6 +107,6 @@
   ;; If you want relative line number in NORMAL state(for display-line-numbers-mode)
   (meow-setup-line-number))
   ;; If you need setup indicator, see `meow-indicator' for customizing by hand.
-  
+
 
 (provide 'init-modal)
