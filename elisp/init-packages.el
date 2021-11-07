@@ -12,10 +12,8 @@
 ;; increment narrowing
 (straight-use-package 'selectrum)
 ;; pinyin input method
-(straight-use-package 'pyim)
-(straight-use-package 'posframe)
-(straight-use-package 'pyim-basedict)
-;; better syntax highlighting with tree-sitter
+(straight-use-package 'rime)
+; better syntax highlighting with tree-sitter
 (straight-use-package 'tree-sitter)
 (straight-use-package 'tree-sitter-langs)
 ;; lsp supports
