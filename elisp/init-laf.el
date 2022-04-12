@@ -4,9 +4,6 @@
 (add-hook 'after-init-hook #'doom-modeline-mode)
 (load-theme 'doom-one t)
 
-;; transparency
-(add-to-list 'default-frame-alist '(alpha . (90 . 50)))
-
 ;; open selectrum
 (selectrum-mode +1)
 
