@@ -1,14 +1,14 @@
-;;; -*- lexical-binding: t -*-
-
+(straight-use-package 'meow)
 (defun meow-setup ()
   (setq meow-cheatsheet-layout meow-cheatsheet-layout-qwerty)
   (meow-motion-overwrite-define-key
    '("j" . meow-next)
-   '("k" . meow-prev))
+   '("k" . meow-prev)
+   '("<escape>" . ignore))
   (meow-leader-define-key
    ;; SPC j/k will run the original command in MOTION state.
-   '("j" . meow-motion-origin-command)
-   '("k" . meow-motion-origin-command)
+   '("j" . "H-j")
+   '("k" . "H-k")
    ;; Use SPC (0-9) for digit arguments.
    '("1" . meow-digit-argument)
    '("2" . meow-digit-argument)
@@ -44,14 +44,12 @@
    '("b" . meow-back-word)
    '("B" . meow-back-symbol)
    '("c" . meow-change)
-   '("C" . meow-change-save)
    '("d" . meow-delete)
    '("D" . meow-backward-delete)
    '("e" . meow-next-word)
    '("E" . meow-next-symbol)
    '("f" . meow-find)
-   '("F" . meow-find-expand)
-   '("g" . meow-cancel)
+   '("g" . meow-cancel-selection)
    '("G" . meow-grab)
    '("h" . meow-left)
    '("H" . meow-left-expand)
@@ -65,48 +63,32 @@
    '("L" . meow-right-expand)
    '("m" . meow-join)
    '("n" . meow-search)
-   '("N" . meow-pop-search)
    '("o" . meow-block)
-   '("O" . meow-block-expand)
+   '("O" . meow-to-block)
    '("p" . meow-yank)
-   '("P" . meow-yank-pop)
    '("q" . meow-quit)
    '("Q" . meow-goto-line)
    '("r" . meow-replace)
    '("R" . meow-swap-grab)
    '("s" . meow-kill)
    '("t" . meow-till)
-   '("T" . meow-till-expand)
    '("u" . meow-undo)
    '("U" . meow-undo-in-selection)
    '("v" . meow-visit)
-   '("V" . meow-kmacro-matches)
    '("w" . meow-mark-word)
    '("W" . meow-mark-symbol)
    '("x" . meow-line)
-   '("X" . meow-kmacro-lines)
+   '("X" . meow-goto-line)
    '("y" . meow-save)
    '("Y" . meow-sync-grab)
    '("z" . meow-pop-selection)
-   '("Z" . meow-pop-all-selection)
-   '("&" . meow-query-replace)
-   '("%" . meow-query-replace-regexp)
    '("'" . repeat)
-   '("\\" . quoted-insert)
-   '("<f3>" . meow-start-kmacro)
-   '("<f4>" . meow-end-or-call-kmacro)
-   '("<escape>" . meow-last-buffer)))
+   '("<escape>" . ignore)))
 
 (require 'meow)
 
+(meow-setup)
+
 (meow-global-mode 1)
-
-(with-eval-after-load "meow"
-  ;; meow-setup is your custom function, see below
-  (meow-setup)
-  ;; If you want relative line number in NORMAL state(for display-line-numbers-mode)
-  (meow-setup-line-number))
-  ;; If you need setup indicator, see `meow-indicator' for customizing by hand.
-
 
 (provide 'init-modal)

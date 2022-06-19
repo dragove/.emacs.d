@@ -1,5 +1,3 @@
-;; -*- lexical-binding: t -*-
-
 (setq-default
  inhibit-startup-message t
  inhibit-x-resources t
@@ -57,7 +55,6 @@
  bidi-paragraph-direction 'left-to-right
  ;; Allow resize by pixels
  frame-resize-pixelwise t
- x-gtk-resize-child-frames nil
  x-underline-at-descent-line t
  indent-tabs-mode nil
  read-process-output-max (* 1024 1024)
@@ -72,22 +69,10 @@
  ;; Custom file path
  custom-file (expand-file-name "custom.el" user-emacs-directory)
  ;; Goto top or bottom when scroll failed
- scroll-error-top-bottom t
- ;; Don't use Fcitx5 in Emacs in PGTK build
- pgtk-use-im-context-on-new-connection nil)
+ scroll-error-top-bottom t)
 
-(fset 'yes-or-no-p 'y-or-n-p)
-
-(defun +reopen-file-with-sudo ()
-  (interactive)
-  (find-alternate-file (format "/sudo::%s" (buffer-file-name))))
+(defalias 'yes-or-no-p 'y-or-n-p)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
-
-;; unbind some useless keybindings
-(global-unset-key (kbd "C-x C-p"))
-(global-unset-key (kbd "C-x C-n"))
-(global-unset-key (kbd "C-x C-b"))
-(global-set-key (kbd "C-x C-d") #'dired)
 
 (provide 'init-defaults)
