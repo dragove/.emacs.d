@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t -*-
 (setq-default
  inhibit-startup-message t
  inhibit-x-resources t

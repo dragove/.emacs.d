@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t -*-
 (straight-use-package 'meow)
 (defun meow-setup ()
   (setq meow-cheatsheet-layout meow-cheatsheet-layout-qwerty)

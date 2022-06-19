@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t -*-
 (setq straight-vc-git-default-clone-depth 1)
 
 (defvar bootstrap-version)
