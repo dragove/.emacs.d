@@ -3,7 +3,6 @@
 
 ;; package manager
 (require 'init-straight)
-(require 'init-packages)
 
 ;; load basic settings for emacs
 (require 'init-gc)

@@ -70,9 +70,8 @@
  ;; Custom file path
  custom-file (expand-file-name "custom.el" user-emacs-directory)
  ;; Goto top or bottom when scroll failed
- scroll-error-top-bottom t)
-
-(defalias 'yes-or-no-p 'y-or-n-p)
+ scroll-error-top-bottom t
+ use-short-answers t)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
