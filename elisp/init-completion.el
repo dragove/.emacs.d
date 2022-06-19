@@ -2,6 +2,10 @@
 (straight-use-package 'corfu)
 (straight-use-package 'vertico)
 (straight-use-package 'orderless)
+(straight-use-package 'marginalia)
+
+;; marginalia helps you preview infomation in minibuffer
+(marginalia-mode)
 
 ;; orderless for better completion
 (require 'orderless)
