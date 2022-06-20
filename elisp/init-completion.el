@@ -26,6 +26,7 @@
 
 ;; consult
 (global-set-key (kbd "C-s") 'consult-line)
+(global-set-key (kbd "C-x b") 'consult-buffer)
 ;; embark
 (global-set-key (kbd "C-;") 'embark-act)
 

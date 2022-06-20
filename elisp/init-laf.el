@@ -2,7 +2,6 @@
 (straight-use-package 'doom-themes)
 ;; init theme
 (load-theme 'doom-one t)
-
 ;; No scroll bar
 (scroll-bar-mode -1)
 

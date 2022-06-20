@@ -71,7 +71,8 @@
  custom-file (expand-file-name "custom.el" user-emacs-directory)
  ;; Goto top or bottom when scroll failed
  scroll-error-top-bottom t
- use-short-answers t)
+ use-short-answers t
+ ring-bell-function 'ignore)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
