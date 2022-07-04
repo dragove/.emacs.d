@@ -5,3 +5,4 @@
 (require 'init-completion)
 (require 'init-edit)
 (require 'init-org)
+(require 'init-lsp)

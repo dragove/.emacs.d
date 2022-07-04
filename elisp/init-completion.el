@@ -1,5 +1,4 @@
 ;; -*- lexical-binding: t -*-
-(straight-use-package 'corfu)
 (straight-use-package 'which-key)
 (straight-use-package 'orderless)
 (straight-use-package 'marginalia)
@@ -16,10 +15,6 @@
 ;; orderless for better completion
 (setq completion-styles '(orderless basic)
       completion-category-overrides '((file (styles basic partial-completion))))
-
-;; corfu for completion
-(setq corfu-auto t)
-(global-corfu-mode)
 
 ;; vertical completion in minibuffer
 (vertico-mode)

@@ -17,4 +17,8 @@
 ;; Font configuration
 (set-face-attribute 'default nil :height 160)
 
+;; add posframe support
+(straight-use-package 'posframe)
+
+
 (provide 'init-laf)
